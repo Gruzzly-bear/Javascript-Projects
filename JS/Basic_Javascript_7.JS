@@ -13,6 +13,7 @@ function Mul_nums_1() {
     console.log(14 * Z);
 }
 function Mul_nums_2() {
+    var Z = 30;
     console.log(Z * 100);
 }
 Mul_nums_1();
