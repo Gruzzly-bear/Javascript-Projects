@@ -42,3 +42,4 @@ function value_Method() {
     var X = "What is my value?";
     document.getElementById("Value") .innerHTML = X.valueOf(X);
 }
+
