@@ -1,3 +1,16 @@
+function Call_Loop() {
+    var Digit = "";
+    var X = 1;
+    while (X < 13) {
+        Digit += "<br>" +X;
+        X++;
+    }
+    document.getElementById("Loop").innerHTML = Digit;
+}
+
+
+
+
 function string() {
     var words = "Here are some words!"
     document.getElementById("words") .innerHTML = words.length;
