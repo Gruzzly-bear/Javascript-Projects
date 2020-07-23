@@ -29,7 +29,7 @@ function Input_Decimal(dot) {
 ```
 ### TicTacToe dice roll
 
-```Javascript
+``` Javascript
 function rollForTurn() {
 	var xArray = [];
 	var ranNum = '';
@@ -56,7 +56,7 @@ function rollForTurn() {
     	setTimeout(function() {writeMsg(txt1);}, 1000); 
     }
     
-    ```
+```
 
 ### Contact and links
 - [Github](https://github.com/Gruzzly-bear)
