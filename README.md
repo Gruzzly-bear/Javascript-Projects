@@ -7,6 +7,7 @@ This repository houses a load of test code I have worked on throughout my journe
 ### Some notable features.
 
 ### Calculator Javascript functions
+For the digit and decimal.
 ```Javascript 
 function Input_Digit(digit) {
     const { Display_Value, Wait_Second_Operand } = Calculator;
@@ -26,7 +27,36 @@ function Input_Decimal(dot) {
 }
 
 ```
+### TicTacToe dice roll
 
+```Javascript
+function rollForTurn() {
+	var xArray = [];
+	var ranNum = '';
+	var minimum = 1;
+	var maximum = 11;
+    var first = "";
+    var txt1 = "";
+	for (var i = 0; i < 2; i++) {
+		ranNum = Math.floor(Math.random()*(maximum - minimum) + minimum);
+		xArray.push(ranNum);
+	}
+    diceRoll();
+    for (i=0;i<xArray.length;i++) {
+		var result = i + 1;
+        var pOne = xArray[0];
+		var pTwo = xArray[1];
+		if (pOne == pTwo) { 
+			pOne = 1;
+			pTwo = 2;
+		}
+        txt1 = "Player 1 rolled ["+pOne+"]<br>";
+        writeMsg(txt1);
+        txt1 = txt1 + "Player 2 rolled ["+pTwo+"]<br><br>";
+    	setTimeout(function() {writeMsg(txt1);}, 1000); 
+    }
+    
+    ```
 
 ### Contact and links
 - [Github](https://github.com/Gruzzly-bear)
